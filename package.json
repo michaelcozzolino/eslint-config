@@ -26,10 +26,10 @@
     "devDependencies": {
         "@antfu/eslint-config": "^4.11.0",
         "@eslint/compat": "^1.2.7",
-        "@stdlib/process-cwd": "^0.2.2",
         "@vue/compiler-sfc": "^3.5.13",
         "eslint": "^9.23.0",
         "eslint-plugin-align-import": "^1.0.0",
+        "find-up": "^7.0.0",
         "typescript": "^5.8.2"
     }
 }

@@ -1,8 +1,10 @@
-import path                  from 'node:path';
 import antfu                 from '@antfu/eslint-config';
 import { includeIgnoreFile } from '@eslint/compat';
-import cwd                   from '@stdlib/process-cwd';
 import alignImport           from 'eslint-plugin-align-import';
+import { findUp }            from 'find-up';
+
+// eslint-disable-next-line antfu/no-top-level-await
+const gitignore = await findUp('.gitignore');
 
 export function michaelcozzolino() {
     return antfu(
@@ -15,7 +17,7 @@ export function michaelcozzolino() {
                 indent: 4,
                 semi:   true,
             },
-            ignores: includeIgnoreFile(path.resolve(cwd(), '.gitignore')).ignores,
+            ignores: gitignore === undefined ? undefined : includeIgnoreFile(gitignore).ignores,
         },
         {
             files: ['**/*.vue'],
