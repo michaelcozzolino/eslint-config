@@ -1,12 +1,20 @@
 {
     "name": "@michaelcozzolino/eslint-config",
     "type": "module",
+    "version": "1.0.0",
     "packageManager": "yarn@4.7.0",
-    "keywords": ["eslint", "eslint-config", "antfu-based-eslint-config"],
+    "keywords": [
+        "eslint",
+        "eslint-config",
+        "antfu-based-eslint-config"
+    ],
     "author": "Michael Cozzolino",
     "repository": {
         "type": "git",
         "url": "git+https://github.com/michaelcozzolino/eslint-config.git"
+    },
+    "scripts": {
+        "publish": "yarn npm publish --access public"
     },
     "peerDependencies": {
         "eslint": ">= 9"
