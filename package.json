@@ -1,0 +1,20 @@
+{
+    "name": "@michaelcozzolino/eslint-config",
+    "type": "module",
+    "packageManager": "yarn@4.7.0",
+    "keywords": ["eslint", "eslint-config", "antfu-based-eslint-config"],
+    "author": "Michael Cozzolino",
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/michaelcozzolino/eslint-config.git"
+    },
+    "peerDependencies": {
+        "eslint": ">= 9"
+    },
+    "devDependencies": {
+        "@antfu/eslint-config": "^4.11.0",
+        "@eslint/compat": "^1.2.7",
+        "eslint": "^9.23.0",
+        "eslint-plugin-align-import": "^1.0.0"
+    }
+}
