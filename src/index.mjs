@@ -60,6 +60,12 @@ export function michaelcozzolino() {
                 ],
                 'align-import/align-import': ['error'],
                 'align-import/trim-import':  ['error'],
+                'test/prefer-lowercase-title': [
+                    'error',
+                    {
+                        ignore: ['describe'],
+                    }
+                ],
             },
         },
     );
