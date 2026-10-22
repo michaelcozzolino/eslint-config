@@ -1,7 +1,6 @@
 import antfu                 from '@antfu/eslint-config';
-import { fixupPluginRules }  from '@eslint/compat';
 import { includeIgnoreFile } from '@eslint/config-helpers';
-import alignImport           from 'eslint-plugin-align-import';
+import alignImport           from '@michaelcozzolino/eslint-plugin-align-import';
 import { findUp }            from 'find-up';
 
 // eslint-disable-next-line antfu/no-top-level-await
@@ -11,7 +10,7 @@ export function michaelcozzolino() {
     return antfu(
         {
             plugins: {
-                'align-import': fixupPluginRules(alignImport),
+                'align-import': alignImport,
             },
             type:      'lib',
             stylistic: {
