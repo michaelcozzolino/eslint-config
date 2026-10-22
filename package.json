@@ -28,10 +28,9 @@
     },
     "dependencies": {
         "@antfu/eslint-config": "^9.5.1",
-        "@eslint/compat": "^2.1.1",
         "@eslint/config-helpers": "^0.7.0",
+        "@michaelcozzolino/eslint-plugin-align-import": "^1.0.0",
         "@vue/compiler-sfc": "^3.5.44",
-        "eslint-plugin-align-import": "^1.0.0",
         "find-up": "^8.0.0"
     },
     "devDependencies": {

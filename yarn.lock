@@ -306,7 +306,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@eslint/compat@npm:^2.1.0, @eslint/compat@npm:^2.1.1":
+"@eslint/compat@npm:^2.1.0":
   version: 2.1.1
   resolution: "@eslint/compat@npm:2.1.1"
   dependencies:
@@ -473,17 +473,25 @@ __metadata:
   resolution: "@michaelcozzolino/eslint-config@workspace:."
   dependencies:
     "@antfu/eslint-config": "npm:^9.5.1"
-    "@eslint/compat": "npm:^2.1.1"
     "@eslint/config-helpers": "npm:^0.7.0"
+    "@michaelcozzolino/eslint-plugin-align-import": "npm:^1.0.0"
     "@vue/compiler-sfc": "npm:^3.5.44"
     eslint: "npm:^10.13.0"
-    eslint-plugin-align-import: "npm:^1.0.0"
     find-up: "npm:^8.0.0"
     typescript: "npm:^6.0.3"
   peerDependencies:
     eslint: ^9.10.0 || ^10.0.0
   languageName: unknown
   linkType: soft
+
+"@michaelcozzolino/eslint-plugin-align-import@npm:^1.0.0":
+  version: 1.0.0
+  resolution: "@michaelcozzolino/eslint-plugin-align-import@npm:1.0.0"
+  peerDependencies:
+    eslint: ">=8.0.0"
+  checksum: 10c0/a66af727f344ed37be131f5029dcd98fe8b0eac9dd64733b5cc5932128489f60eb6ccbbe5b492887411e48bb0e7fba6324a9c865f78213c038bae2a4648d3c95
+  languageName: node
+  linkType: hard
 
 "@ota-meshi/ast-token-store@npm:^0.3.0":
   version: 0.3.0
@@ -1241,13 +1249,6 @@ __metadata:
   peerDependencies:
     eslint: "*"
   checksum: 10c0/b01f4abd191ad2aa3166fbdfc02d902089ea07cec007936aee93234183fca724ceb386b8a261e6b5007634e4c9347c6732517da9258b39b097d57ecadc5d42cd
-  languageName: node
-  linkType: hard
-
-"eslint-plugin-align-import@npm:^1.0.0":
-  version: 1.0.0
-  resolution: "eslint-plugin-align-import@npm:1.0.0"
-  checksum: 10c0/9628cef05d50156369c01081a9b16bcd13281dfa626104227ef0b7712d9297fcb3fd6de31353947c1f0436ff908a7f1a6494727ac405f8093cd7db2e17c93f12
   languageName: node
   linkType: hard
 
