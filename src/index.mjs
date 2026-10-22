@@ -1,5 +1,6 @@
 import antfu                 from '@antfu/eslint-config';
-import { includeIgnoreFile } from '@eslint/compat';
+import { fixupPluginRules }  from '@eslint/compat';
+import { includeIgnoreFile } from '@eslint/config-helpers';
 import alignImport           from 'eslint-plugin-align-import';
 import { findUp }            from 'find-up';
 
@@ -10,7 +11,7 @@ export function michaelcozzolino() {
     return antfu(
         {
             plugins: {
-                'align-import': alignImport,
+                'align-import': fixupPluginRules(alignImport),
             },
             type:      'lib',
             stylistic: {
@@ -58,13 +59,13 @@ export function michaelcozzolino() {
                         },
                     },
                 ],
-                'align-import/align-import': ['error'],
-                'align-import/trim-import':  ['error'],
+                'align-import/align-import':   ['error'],
+                'align-import/trim-import':    ['error'],
                 'test/prefer-lowercase-title': [
                     'error',
                     {
                         ignore: ['describe'],
-                    }
+                    },
                 ],
             },
         },
