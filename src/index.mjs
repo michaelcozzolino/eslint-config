@@ -20,6 +20,26 @@ export function michaelcozzolino() {
             ignores: gitignore === undefined ? undefined : includeIgnoreFile(gitignore).ignores,
         },
         {
+            files: ['**/*.{ts,tsx,mts,cts,vue}'],
+            rules: {
+                '@typescript-eslint/typedef': [
+                    'error',
+                    {
+                        arrowParameter: true,
+                        parameter:      true,
+                    },
+                ],
+                '@typescript-eslint/explicit-function-return-type': [
+                    'error',
+                    {
+                        allowExpressions:              false,
+                        allowHigherOrderFunctions:     false,
+                        allowTypedFunctionExpressions: false,
+                    },
+                ],
+            },
+        },
+        {
             files: ['**/*.vue'],
             rules: {
                 'vue/block-order': [
